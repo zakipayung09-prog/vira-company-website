@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101316">
+  <meta name="description" content="Vivian Resources Indonesia — Building Resources. Advancing Industries.">
+  <title>Vivian Resources Indonesia | Building Resources. Advancing Industries.</title>
+  <style>
+    :root{--bg:#101316;--panel:#171b20;--panel2:#20262c;--line:#343b43;--white:#f4f6f7;--muted:#a5adb5;--accent:#c6cdd2;--max:1180px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(16,19,22,.92);backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em;font-size:14px}.mark{width:38px;height:38px;border:1px solid #9da6ad;display:grid;place-items:center;font-size:18px;font-weight:900;transform:rotate(45deg)}.mark span{transform:rotate(-45deg)}
+    nav{display:flex;align-items:center;gap:26px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#c3c9ce}nav a:hover{color:white}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid #aeb7be;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;transition:.2s}.nav-cta:hover,.btn:hover{background:#e9edf0;color:#101316}
+    .hero{min-height:660px;display:flex;align-items:center;position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#101316 0%,#101316ed 45%,#10131666 100%),linear-gradient(0deg,#101316 0%,transparent 45%),url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1800&q=80");background-size:cover;background-position:center;opacity:.8}
+    .hero:after{content:"";position:absolute;width:560px;height:560px;border:1px solid #aeb7be20;right:-160px;top:50%;transform:translateY(-50%) rotate(45deg);box-shadow:0 0 0 70px #aeb7be08,0 0 0 140px #aeb7be05}
+    .hero-content{position:relative;z-index:1;padding:95px 0;max-width:760px}.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#b9c1c7;font-weight:700}
+    h1{font-size:clamp(42px,7vw,82px);line-height:1.03;letter-spacing:-.045em;margin:24px 0 24px;font-weight:750}h1 span{color:#aeb8c0}
+    .hero p{max-width:570px;color:#b7bec4;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.btn.primary{background:#e7ebee;color:#111519;border-color:#e7ebee}.hero-note{margin-top:50px;font-size:10px;color:#8d969e;letter-spacing:.13em;text-transform:uppercase}
+    section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:44px}.section-head h2{font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-.035em;margin:12px 0 0}.section-head p{max-width:450px;color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.about-copy{font-size:18px;color:#c1c8cd}.about-copy p{margin-top:0}.about-copy strong{color:white}
+    .facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}.fact{padding:24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.fact small{display:block;color:#8f99a2;text-transform:uppercase;letter-spacing:.13em;font-size:10px;margin-bottom:8px}.fact b{font-size:15px;font-weight:600}
+    .dark-section{background:#15191d;border-top:1px solid #ffffff08;border-bottom:1px solid #ffffff08}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#1d2329,#14181c);padding:28px;min-height:245px;position:relative}.card .num{font-size:11px;color:#9aa4ac;letter-spacing:.18em}.card h3{font-size:22px;margin:42px 0 12px}.card p{font-size:14px;color:#aeb6bd;margin:0}.card:after{content:"";position:absolute;right:22px;top:22px;width:26px;height:26px;border:1px solid #7e8992;transform:rotate(45deg)}
+    .approach{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.step{padding:26px 22px;border-right:1px solid var(--line)}.step:first-child{padding-left:0}.step:last-child{border-right:0}.step .n{font-size:12px;color:#9aa4ac;letter-spacing:.15em}.step h3{font-size:17px;margin:20px 0 9px}.step p{font-size:13px;color:#a6afb6;margin:0}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.contact h2{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:14px 0 20px;letter-spacing:-.04em}.contact p{color:#aeb6bd;max-width:500px}.contact-panel{padding:30px;border:1px solid var(--line);background:var(--panel)}.contact-panel span{font-size:10px;text-transform:uppercase;letter-spacing:.18em;color:#9aa4ac}.contact-panel h3{font-size:20px;margin:12px 0}.contact-panel p{font-size:14px}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:#87919a;font-size:11px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.foot strong{color:#dce1e5;letter-spacing:.1em}
+    @media(max-width:800px){nav{display:none}.hero{min-height:590px}.section-head,.about-grid,.contact{grid-template-columns:1fr;display:grid;gap:25px}.cards{grid-template-columns:1fr}.approach{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step:nth-child(3){border-top:1px solid var(--line)}.step:nth-child(4){border-top:1px solid var(--line)}.step:first-child{padding-left:22px}.section-head{align-items:start}.about-grid{gap:35px}}
+    @media(max-width:480px){.wrap{width:min(var(--max),calc(100% - 30px))}.nav{height:68px}.brand{font-size:11px}.mark{width:32px;height:32px}.hero-content{padding:75px 0}.hero p{font-size:15px}section{padding:72px 0}.approach{grid-template-columns:1fr}.step,.step:first-child{padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}.step:nth-child(3){border-top:0}.facts{grid-template-columns:1fr 1fr}.fact{padding:16px}.fact b{font-size:13px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Vivian Resources Indonesia home"><div class="mark"><span>V</span></div><span>VIVIAN RESOURCES<br>INDONESIA</span></a>
+    <nav aria-label="Navigasi utama"><a href="#about">Tentang</a><a href="#focus">Fokus</a><a href="#approach">Pendekatan</a><a href="#contact">Kontak</a></nav>
+    <a class="nav-cta" href="#contact">Hubungi Kami</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-content">
+      <div class="eyebrow">Natural Resources · Industrial Development</div>
+      <h1>Building Resources.<br><span>Advancing Industries.</span></h1>
+      <p>Vivian Resources Indonesia mengevaluasi peluang di sektor sumber daya alam dan pengembangan industri dengan pendekatan yang terukur, bertanggung jawab, dan berorientasi jangka panjang.</p>
+      <div class="actions"><a class="btn primary" href="#about">Kenali Perusahaan</a><a class="btn" href="#focus">Area Fokus</a></div>
+      <div class="hero-note">Opportunity evaluation · Responsible growth · Long-term perspective</div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">01 / Tentang Kami</div><h2>Menilai peluang.<br>Membangun nilai.</h2></div><p>Berangkat dari pemahaman bahwa pengembangan sumber daya membutuhkan disiplin, kemitraan yang tepat, dan pertimbangan dampak jangka panjang.</p></div>
+      <div class="about-grid">
+        <div class="about-copy"><p><strong>Vivian Resources Indonesia</strong> merupakan inisiatif pengembangan bisnis yang berfokus pada evaluasi peluang di sektor sumber daya alam dan industri terkait.</p><p>Kami mengutamakan kajian awal, pemetaan risiko, dan pemahaman konteks operasional sebelum melangkah ke tahap pengembangan berikutnya.</p></div>
+        <div class="facts"><div class="fact"><small>Fokus</small><b>Sumber Daya & Industri</b></div><div class="fact"><small>Pendekatan</small><b>Berbasis Kajian</b></div><div class="fact"><small>Orientasi</small><b>Jangka Panjang</b></div><div class="fact"><small>Komitmen</small><b>Pengembangan Bertanggung Jawab</b></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="dark-section" id="focus">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">02 / Area Fokus</div><h2>Potensi yang<br>dievaluasi secara cermat.</h2></div><p>Area berikut merupakan fokus penjajakan dan evaluasi peluang, bukan pernyataan bahwa proyek atau operasi telah berjalan.</p></div>
+      <div class="cards">
+        <article class="card"><div class="num">01 — MINERAL</div><h3>Mineral & Pertambangan</h3><p>Penjajakan potensi mineral, termasuk nikel, melalui kajian awal atas peluang, risiko, dan kebutuhan pengembangan.</p></article>
+        <article class="card"><div class="num">02 — INDUSTRI</div><h3>Rantai Nilai Industri</h3><p>Memahami peluang yang menghubungkan sumber daya, pengolahan, logistik, dan kebutuhan industri.</p></article>
+        <article class="card"><div class="num">03 — KEMITRAAN</div><h3>Kolaborasi Strategis</h3><p>Mengevaluasi peluang kolaborasi dengan pihak yang relevan berdasarkan kesesuaian tujuan dan prinsip kehati-hatian.</p></article>
+      </div>
+    </div>
+  </section>
+  <section id="approach">
+    <div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">03 / Pendekatan</div><h2>Proses sebelum<br>eksekusi.</h2></div><p>Setiap peluang memerlukan proses yang jelas untuk membantu keputusan tetap realistis dan bertanggung jawab.</p></div>
+      <div class="approach">
+        <div class="step"><div class="n">STEP 01</div><h3>Identifikasi</h3><p>Memetakan peluang dan konteks sektor.</p></div>
+        <div class="step"><div class="n">STEP 02</div><h3>Evaluasi</h3><p>Meninjau kelayakan awal dan risiko utama.</p></div>
+        <div class="step"><div class="n">STEP 03</div><h3>Uji Tuntas</h3><p>Mengembangkan pemahaman melalui verifikasi dan kajian yang relevan.</p></div>
+        <div class="step"><div class="n">STEP 04</div><h3>Pengembangan</h3><p>Menentukan langkah berikutnya sesuai hasil evaluasi.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="dark-section" id="contact">
+    <div class="wrap contact">
+      <div><div class="eyebrow">04 / Kontak</div><h2>Diskusikan peluang<br>bersama kami.</h2><p>Untuk pertanyaan umum atau pembahasan peluang kerja sama, hubungi Vivian Resources Indonesia melalui kanal komunikasi resmi perusahaan.</p></div>
+      <div class="contact-panel"><span>Business inquiries</span><h3>Vivian Resources Indonesia</h3><p>Informasi kontak resmi akan ditambahkan setelah kanal perusahaan ditetapkan.</p><a class="btn" href="#home">Kembali ke Atas</a></div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><strong>VIVIAN RESOURCES INDONESIA</strong><span>Building Resources. Advancing Industries.</span><span>© <span id="year">2026</span> Vivian Resources Indonesia</span></div></footer>
+</body>
+                                                                                                                                                                                                                                                                                                                                                             </html>
